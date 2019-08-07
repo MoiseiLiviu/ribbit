@@ -1,0 +1,104 @@
+@import '../../styles/variables.scss';
+
+.post{
+
+    @media only screen and(max-width:748px){
+        width: 100vw;
+    }
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+    display: table;
+    margin-bottom: 2rem;
+    border: 1px solid transparent;
+
+    &__img{
+        max-width: 100%;
+    }
+
+    &:hover{
+        border: 1px solid darkgray;
+
+    }
+&__window-close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    border: none;
+    background-color: white;
+}
+
+&__info{
+    padding-left: 1rem;
+}
+
+&__description{
+    font-size: 1.5rem;
+    color: #595959;
+}
+
+&__votes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    &__meta{
+        display: flex;
+        &__data{
+        font-size: 1rem;
+        color:gray;
+        }
+        &__spaces{
+        font-size: 1.3rem;
+        }
+        &__point-divider{
+            font-size: 1.5rem;
+            
+        }
+    }
+    &__footer{
+        padding: .4rem 0;
+        display: flex;
+        justify-content: space-around;
+        &__btn{
+            border: none;
+            background-color: white;
+            padding-bottom: .5rem;
+            border-radius: 5px;
+            &:hover{
+                background-color: darkgray;
+                
+            }
+        }
+    }
+    &__voting{
+     background-color: #b3b3b3;
+     height: 100%;
+     flex-direction: column;
+     justify-content: center;
+     border-top-left-radius: 4px;
+     border-bottom-left-radius: 4px;
+     display: table-cell;
+     width: 2rem;
+     padding: 1rem 0;
+    }
+}
+
+.load-more__btn{
+    
+    @include primary-button;
+    margin-left: 36vw;
+    padding: .3rem 1.5rem;
+}
+
+.posts-not-found{
+    width: 50vw;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 3rem 3rem;
+    height: min-content;
+}

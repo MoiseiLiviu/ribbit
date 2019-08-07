@@ -1,0 +1,97 @@
+@import '../../styles/variables.scss';
+
+.main-nav{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: .3rem 6rem;
+    background-color: white;
+
+    @media only screen and(max-width:768px){
+        padding: 0;
+    }
+
+    &__btn{
+        padding: .3rem 1.5rem;
+        border: 1px solid darkgray;
+        font-size: 1rem;
+        border-radius: 7px;
+
+    }
+    &__logo{
+        font-size: 1.5rem;
+        color: black;
+        &:link,&:hover{
+        text-decoration: none;
+        color: black;
+        }
+        &__img{
+            width: 2.7rem;
+            height: 2.7rem;
+        }
+    }
+    &__profile{
+        position: relative;
+    
+       &__dropdown-icon{
+           margin-left: 1rem;
+       }
+       &__img{
+           border-radius: 50%;
+           height: 2rem;
+           width: 2rem;
+       }
+       &:hover .main-nav__dropdown{
+           display: flex;
+           flex-direction: column;
+           &>*{
+               width: 100%;
+           }
+       }
+    }
+    &__dropdown{
+        border-radius: 7px;
+        width: 100%;   
+        position: absolute;
+        display: none;
+        background-color: white;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+        button{
+          border: none;
+          border-radius: 7px
+        }
+        &__link{
+            text-align: center;
+        }
+    }
+
+    &__search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__input{
+        width: 25vw;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        background-color: #f2f2f2;
+        z-index: 1;
+           &__btn{
+               border: none;
+               margin-left: -2.5rem;
+               z-index: 2;
+           }
+        }
+        &__icon{
+            margin-right: -2rem;
+            z-index: 2;
+            position: relative;
+        }
+        &:hover &__input{
+            border: 1px solid #3399ff;
+        } 
+        
+    }
+
+  
+}

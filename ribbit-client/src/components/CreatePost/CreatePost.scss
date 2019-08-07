@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+
+.post-creator{
+    width: 68%;
+    padding: 1.5rem 1.5rem;
+    border-radius: 7px;
+    border: 1px solid darkgrey;
+    background-color: white;
+    margin-right: 3rem;
+    &__container{
+        margin: 0 auto;
+        margin-top: 6rem;
+        width: 77vw;   
+        display: flex;
+    }
+    &__title{
+    font-size: 1.5rem;
+
+    }
+    &__selector{
+        width: 45%;
+        padding: .5rem .2rem;
+        border: 1px solid darkgrey;
+        outline: none;
+    }
+    &__sidebar{
+        border: 1px solid darkgrey;
+        width: 32%;
+        border-radius: 7px;
+        background-color: white;
+        padding: 1.2rem 1.4rem;
+        h3{
+            font-size: 1.5rem;
+        }
+        &__icon{
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+    }
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    &__field{   
+        @include input_field;
+    }
+}
+
+.active{
+    background-color: grey;
+}
+
+.upload-form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        input:not(:last-of-type){
+            @include input_field;
+        }
+    }
+
+

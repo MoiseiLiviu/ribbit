@@ -1,0 +1,22 @@
+.footer{
+    background-color: white;
+    border-radius: 6px;
+    width: 20rem;
+    padding: 1.5rem 1.5rem;
+    &__details{
+        display: grid;
+        grid-row-gap: 1rem;
+        grid-template-columns: repeat(2,50%);
+        &__link{
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+    h5{
+        font-size: 1rem;
+        color:rgb(114, 110, 110)
+    }
+}

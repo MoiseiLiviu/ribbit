@@ -1,0 +1,42 @@
+@mixin primary-button{
+    padding: .5rem 0;
+    border: none;
+    border-radius: 7px;
+    background-color: #4d88ff;
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 1.1rem;
+    text-align: center;
+     &:hover{
+         background-color: #6195fc;
+     }
+}
+
+@mixin input_field{
+    width: 100%;
+    border-radius: 3px;
+    border:1px solid darkgrey;
+    margin-bottom: 1.5rem;
+    padding: .5rem .3rem;
+}
+
+@mixin default-input{
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    height: 2rem;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation: fadeIn ease 1s;
+}

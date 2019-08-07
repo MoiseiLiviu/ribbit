@@ -1,0 +1,15 @@
+.space-creator{
+    &__container{
+        padding-top: 4rem;
+        width: 60vw;
+        margin: 0 auto;
+        display: flex;
+        height: min-content;
+    }
+    &__form{
+        width: 70%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 2rem 1.5rem;
+    }
+}

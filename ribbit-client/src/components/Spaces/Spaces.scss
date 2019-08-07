@@ -1,0 +1,35 @@
+.spaces{
+      background-color: white;
+      border-radius: 7px;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border: 1px solid darkgray;
+      margin-bottom: 2rem;
+    &__title{
+
+    }
+    &__section{
+      position: relative;
+      z-index: 1;
+    &:hover{
+      &__popover{
+        display: block;
+      }
+    }
+    &__link{
+      margin-top: 1.5rem;
+      font-size: 1.6rem;
+      &__img{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;}
+      }
+    &__popover{
+      position: absolute;
+      display: none;
+      top: -1rem;
+      z-index: 10;
+    }
+  }
+}
